@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* body */
+body {
+    background: #F0F4F4;
+}
+
+/* Header-image */
+#header-image {
+    background-image: linear-gradient(to top, #6e3f239a 0%, #ce9f79a4 100% ), url(../img/matera.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+/* Header-Nav */
+#navBar{
+    border-bottom: rgba(255, 255, 255, 0.63) 7px double;
+}
+.nav{
+    justify-content: center;
+}
+#navBar ul li a{
+    text-decoration: none;
+    color: #632C3B;
+    margin: 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+#navBar ul li a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    border-bottom: rgba(255, 255, 255, 0.5) 7px solid;
+    transition: 0.5s;
+}
+/* Header-Title */
+#title{
+    position: relative;
+    top: 30vh;
+}
+#title h1{
+color: #411d0d;
+font-size: 80px;
+text-align: center
+}
+
+#title p{
+    color: #411d0d;
+    font-size: 30px;
+    text-align: center
+}
+
+/* Content-grid */
+#grid1, #servicios, #contacto{
+        max-width: 65% !important;
+
+}
+
+.tarjeta{
+    background:#fff;
+}
+
+.row-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 28px;
+    padding: 0 10px;
+}
+
+/* rotation effect */
+.hover-rotate {
+    overflow: hidden;
+    margin: 8px;
+    min-width: 240px;
+    max-width: 320px;
+    width: 100%;
+}
+
+.hover-rotate img {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.hover-rotate:hover img {
+    transform: scale(1.3) rotate(5deg);
+}
+
+
+/* Servicios */
+
+.servicios {
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+
+}
+
+.container2 {
+    display: inline-block;
+    width: 21em;
+    background: #f0f4f4;
+    text-align: center;
+    margin: 1.5%;
+    padding:0 1em;
+    white-space: normal;
+    border-radius: 10px;
+}
+
+.container2 img {
+    height: 230px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.container2 .camioneta{
+    width: 75%; 
+}
+
+.container2 p {
+    text-align: center;
+    color: #5b5b5b;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Contacto */
+
+.social{
+    border: 1px solid black;
+}
+.sMdiv {
+    background: rgb(44, 44, 44);
+    border-radius: 25px;
+}
+.sMdiv svg {
+    margin: 10px;
+    padding: 3px;
+}
+.sMdiv svg:hover {
+    padding: 0px;
+}
+
+/* footer */
