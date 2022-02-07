@@ -3,13 +3,37 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
-
-/* body */
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;      /* 1rem = 10px */
+}
 body {
     background: #F0F4F4;
+    /* background: rgb(58, 58, 58);  */
+}
+.container{
+    max-width: 80% ;
+    border-radius: 10px;
+    background:#fff;
+    /* background: rgb(90, 90, 90);  */
+    box-shadow: 5px 8px 8px #5b5b5b;
+    margin-bottom: 2rem;
+    margin:0 auto;
 }
 
+#contacto h3, #servicios h3, #productos h3{
+    text-align: center;
+    font-size: 3.3rem;
+    margin: 1rem 0;
+}
+
+
+
+
+/* ======= HEADER ======= */
 /* Header-image */
 #header-image {
     background-image: linear-gradient(to top, #6e3f239a 0%, #ce9f79a4 100% ), url(../img/matera.jpeg);
@@ -21,27 +45,36 @@ body {
     background-attachment: fixed;
 }
 /* Header-Nav */
-#navBar{
-    border-bottom: rgba(255, 255, 255, 0.63) 7px double;
-}
-.nav{
+nav{
+    display: flex;
     justify-content: center;
 }
-#navBar ul li a{
-    text-decoration: none;
-    color: #632C3B;
-    margin: 0 20px;
-    font-size: 24px;
-    font-weight: 600;
-    padding-bottom: 15px;
+.nav{
+    width: 50%;
+    border-bottom: rgba(255, 255, 255, 0.5) 7px double;
+    padding: 1.5rem 0;
 }
-#navBar ul li a:hover {
-    text-decoration: none;
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navBar li a{
+    color: #632C3B;
+    margin: 0 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.navBar li a:hover {
     color: rgb(255, 255, 255);
-    padding-bottom: 5px;
-    border-bottom: rgba(255, 255, 255, 0.5) 7px solid;
+    padding-bottom: 0.1rem;
+    border-bottom: rgba(255, 255, 255, 0.7) 7px solid;
     transition: 0.5s;
 }
+
+
+
 /* Header-Title */
 #title{
     position: relative;
@@ -49,117 +82,192 @@ body {
 }
 #title h1{
 color: #411d0d;
-font-size: 80px;
+font-size: 8rem;
 text-align: center
 }
 
 #title p{
     color: #411d0d;
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center
 }
 
-/* Content-grid */
-#grid1, #servicios, #contacto{
-        max-width: 65% !important;
 
-}
-
-.tarjeta{
-    background:#fff;
-}
-
-.row-p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 28px;
-    padding: 0 10px;
-}
-
-/* rotation effect */
-.hover-rotate {
-    overflow: hidden;
-    margin: 8px;
-    min-width: 240px;
-    max-width: 320px;
-    width: 100%;
-}
-
-.hover-rotate img {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
-.hover-rotate:hover img {
-    transform: scale(1.3) rotate(5deg);
-}
-
-
-/* Servicios */
+/* ======= SERVICIOS ======= */
 
 .servicios {
-    text-align: center;
     background: #fff;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
 
 }
-
-.container2 {
-    display: inline-block;
-    width: 21em;
+.servicios h3{
+    color: #000;
+}
+.cards {
+    width: 25rem;
     background: #f0f4f4;
     text-align: center;
     margin: 1.5%;
-    padding:0 1em;
+    padding:0 1rem;
     white-space: normal;
-    border-radius: 10px;
 }
-
-.container2 img {
-    height: 230px;
+.cards img {
+    height: 23rem;
     width: 100%;
-    margin-bottom: 1em;
 }
-
-.container2 .camioneta{
+.cards .camioneta{
     width: 75%; 
 }
-
-.container2 p {
+.cards p {
     text-align: center;
     color: #5b5b5b;
-    margin-top: 20px;
-    font-size: 18px;
+    margin: 2rem 0;
+    font-size: 1.8rem;
 }
 
 
 
+/* ======= PRODUCTOS ======= */
 
+.productos{
+    margin-bottom: 2rem;
+    border-radius: 10px;
 
-
-
-
-
-
-
-/* Contacto */
-
-.social{
-    border: 1px solid black;
 }
-.sMdiv {
-    background: rgb(44, 44, 44);
-    border-radius: 25px;
+h3{
+    font-size: 2rem;
 }
-.sMdiv svg {
-    margin: 10px;
-    padding: 3px;
+.productos-nombre{
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem;
+    margin: 1rem 0;
 }
-.sMdiv svg:hover {
-    padding: 0px;
+.productos-exposicion{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.productos-imagen img{
+    width: 80%;
 }
 
-/* footer */
+
+.hover:hover img {
+    transform: scale(1.5);
+    transition: all 0.3s;
+
+}
+
+
+/* ======= FOOTER ======= */
+
+/* ======= CONTACTO ======= */
+
+.container-contact{
+    background: rgba(2, 2, 2, 0.781);
+    color: #fff;
+}
+#contacto p{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 5rem 0;
+}
+.contacto {
+    text-align: center;
+}
+.contacto p{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem ;
+}
+.contacto a{
+    color: #fff;
+}
+.contacto a:hover{
+    color: #632C3B;
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+}
+.contactIcon{
+    margin: 0 2rem;
+}
+
+/* ======= MEDIA QUERY ======= */
+
+                            /* ---320--- */
+@media (min-width: 320px) {
+    html {
+        font-size: 5px;
+    }
+    .container{
+        max-width: 90% ;
+    }
+    .contactIcon{
+        margin: 0 2rem;
+    }
+} 
+
+                            /* ---320--- */
+@media (min-width: 360px) {
+    html {
+        font-size: 5px;
+    }
+    .container{
+        max-width: 85% ;
+    }
+    .contactIcon{
+        margin: 0 2rem;
+    }
+} 
+
+                            /* ---375--- */
+@media (min-width: 375px) {
+    html {
+        font-size: 6px;
+    }
+    .container{
+        max-width: 85% ;
+    }
+    .contactIcon{
+        margin: 0 1rem;
+    }
+    
+} 
+
+                            /* ---768--- */
+@media (min-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+    .container{
+        max-width: 85% ;
+    }
+    .contactIcon{
+        margin: 0 3.5rem;
+    }
+} 
+
+                            /* ---1280--- */
+@media (min-width: 1280px) {
+    html {
+        font-size: 10px;
+    }
+    .container{
+        max-width: 85% ;
+    }
+    .contactIcon{
+        margin: 0 5rem;
+    }
+} 
+
+
+
+
+
