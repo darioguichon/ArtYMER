@@ -10,8 +10,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <!-- <link rel="stylesheet" href="css/icons.css"> -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
 
     <!-- CSS -->
@@ -33,6 +32,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacto">Contacto</a>
@@ -72,203 +74,98 @@
             </div>
         </div>
 
-        <!--======= PRODUCTOS 2 =======-->
-
-        <div class="root">
-            <div class="gallery">
-                <div class="gallery__item">
-                    <img src="img/1.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/2.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/3.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/4.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/5.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/6.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/7.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/8.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/9.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/10.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/11.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery__item">
-                    <img src="img/12.jpeg" alt="Imagen de galería" class="gallery__img">
-                </div>
-                <div class="gallery-lightbox">
-                    <div class="gallery-lightbox__modal">
-                        <span class="gallery-lightbox__control icon-close">&times</span>
-                        <span class="gallery-lightbox__control icon-back"><i class="mdi mdi-arrow-left icon-back"></i></span>
-                        <span class="gallery-lightbox__control icon-next"><i class="mdi mdi-arrow-right icon-back"></i></span>
-                        <img src="img/1.jpeg" class="gallery-lightbox__img">
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
+        <!--======= PRODUCTOS  =======-->
 
-
-
-
-
-        <!--======= PRODUCTOS =======-->
-        <div class="container">
-            <div id="productos">
-                <h3>Productos</h3>
-            </div>
-
-            <!-- Producto 1 -->
+        <div class="container" id="productos">
+            <h3>Nuestros productos</h3>
+            <p class="productos_p"> Damos forma a la madera para crear un amplio catalogo de productos 100% originales y unicos, entre
+                ellos:</p>
             <div class="productos">
-                <div class="productos-nombre">
-                    <p>Porta Rollos</p>
-                </div>
-                <div class="productos-exposicion">
-                    <!-- foto matera 1 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 2 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 3 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 4 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <!-- Producto 2 -->
-            <div class="productos">
-                <div class="productos-nombre">
+                <div class="cards">
                     <p>Materas</p>
                 </div>
-                <div class="productos-exposicion">
-                    <!-- foto matera 1 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/11.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 2 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/11.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 3 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/11.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 4 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/11.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
+                <div class="cards">
+                    <p>Porta rollos</p>
                 </div>
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="productos">
-                <div class="productos-nombre">
+                <div class="cards">
                     <p>Cuadros</p>
                 </div>
-                <div class="productos-exposicion">
-                    <!-- foto matera 1 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 2 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 3 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                    <!-- foto matera 4 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 4 -->
-            <div class="productos">
-                <div class="productos-nombre">
+                <div class="cards">
                     <p>Vineros</p>
                 </div>
-                <div class="productos-exposicion">
-                    <!-- foto matera 1 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
+                <div class="cards">
+                    <p>Veladoras</p>
+                </div>
+                <div class="cards">
+                    <p>Porta llaves</p>
+                </div>
+            </div>
+        </div>
+
+        <!--======= GALERIA =======-->
+        <div class="container">
+            <div class="root">
+                <h3 id="galeria">Galeria</h3>
+                <div class="gallery">
+                    <div class="gallery__item">
+                        <img src="img/1.jpeg" alt="Imagen de galería" class="gallery__img">
                     </div>
-                    <!-- foto matera 2 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
+                    <div class="gallery__item">
+                        <img src="img/2.jpeg" alt="Imagen de galería" class="gallery__img">
                     </div>
-                    <!-- foto matera 3 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
+                    <div class="gallery__item">
+                        <img src="img/3.jpeg" alt="Imagen de galería" class="gallery__img">
                     </div>
-                    <!-- foto matera 4 -->
-                    <div class="productos-imagen">
-                        <figure class="hover">
-                            <img src="img/matera.jpeg" class="rounded mx-auto d-block" alt="">
-                        </figure>
+                    <div class="gallery__item">
+                        <img src="img/4.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+
+
+                    <div class="gallery__item">
+                        <img src="img/5.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/6.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/7.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/8.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+
+                    <div class="gallery__item">
+                        <img src="img/9.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/10.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/11.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/12.jpeg" alt="Imagen de galería" class="gallery__img">
+                    </div>
+                    <div class="gallery-lightbox">
+                        <div class="gallery-lightbox__modal">
+                            <span class="gallery-lightbox__control icon-close">&times</span>
+                            <span class="gallery-lightbox__control icon-back"><i
+                                    class="mdi mdi-arrow-left icon-back"></i></span>
+                            <span class="gallery-lightbox__control icon-next"><i
+                                    class="mdi mdi-arrow-right icon-back"></i></span>
+                            <img src="img/1.jpeg" class="gallery-lightbox__img">
+                        </div>
                     </div>
                 </div>
             </div>
-
 
 
         </div>
+
+
+
 
 
     </main>
@@ -282,7 +179,7 @@
         <div class="container-contact">
             <div id="contacto">
                 <h3>Contacto</h3>
-                <p>Escribinos para solicitar presupuesto o realizar tu encargue.</p>
+                <p>Escribinos para solicitar presupuesto o realizar tu pedido.</p>
             </div>
 
             <div class="contacto">
