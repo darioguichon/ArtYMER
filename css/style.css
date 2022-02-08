@@ -139,14 +139,17 @@ nav {
     width: 75%;
 }
 
-.cards p, .productos_p{
+.cards p{
     text-align: center;
     color: #5b5b5b;
     margin: 2rem 0;
     font-size: 1.8rem;
 }
 
-
+.cards h4{
+    color: #000;
+    font-size: 2rem;
+}
 
 /* ======= PRODUCTOS ======= */
 
@@ -158,19 +161,22 @@ nav {
     margin-bottom: 2rem;
     border-radius: 10px;
 }
+.productos_p{
+    text-align: center;
+    color: #5b5b5b;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
 
 .productos .cards {
-
-    width: 50rem;
-    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
-
 .productos .cards p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #000;
 }
 
@@ -197,7 +203,7 @@ nav {
 .contacto p {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .contacto a {
@@ -389,6 +395,8 @@ nav {
     .contactIcon {
         margin: 0 2rem;
     }
+
+
 }
 
 /* ---320--- */
@@ -434,6 +442,9 @@ nav {
 
     .contactIcon {
         margin: 0 3.5rem;
+    }
+    .productos .cards p {
+        font-size: 2.5rem;
     }
 }
 
