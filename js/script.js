@@ -8,11 +8,10 @@ class Gallery {
         this.addCustomAttribute();
         this.initEventListener();
     }
-
     addCustomAttribute() {
         let next = 0;
         let back = 0;
-        for(let i = 0; i < this.items.length; i++) {
+        for (let i = 0; i < this.items.length; i++) {
             next = i + 1;
             back = i - 1;
             // Caso especial del último item
@@ -27,7 +26,6 @@ class Gallery {
             this.items[i].setAttribute('data-back_item', back);
         }
     }
-
     initEventListener() {
         this.items.forEach(item => {
             item.addEventListener('click', () => {
@@ -35,7 +33,6 @@ class Gallery {
                 this.showLightbox(img.getAttribute('src'), item.dataset.next_item, item.dataset.back_item);
             });
         });
-
         this.modal.addEventListener('click', (e) => {
             let element = e.target;
             if (element.classList.contains(this.config.controls.back)) {
@@ -47,23 +44,19 @@ class Gallery {
             }
         });
     }
-
     getImg(item) {
         return item.querySelector(this.config.galleryImgClass);
     }
-
     showLightbox(imgSrc, nextItem, backItem) {
         this.lightbox.classList.add(this.config.showLightbox);
         this.addImgModal(imgSrc, nextItem, backItem);
     }
-
     addImgModal(imgSrc, nextItem, backItem) {
         this.modal.setAttribute('data-next_item', nextItem);
         this.modal.setAttribute('data-back_item', backItem);
         let imgModal = this.modal.querySelector(this.config.modalImgClass);
         imgModal.setAttribute('src', imgSrc);
     }
-
     changeImg(isNext) {
         let indexItem = this.modal.dataset.back_item;
         if (isNext) {
@@ -74,7 +67,6 @@ class Gallery {
         this.addImgModal(img.getAttribute('src'), item.dataset.next_item, item.dataset.back_item);
     }
 }
-
 new Gallery({
     container: '.gallery',
     item: '.gallery__item',
@@ -83,5 +75,9 @@ new Gallery({
     showLightbox: 'show',
     modal: '.gallery-lightbox__modal',
     modalImgClass: '.gallery-lightbox__img',
-    controls: {close: 'icon-close', next: 'icon-next', back: 'icon-back'}
+    controls: {
+        close: 'icon-close',
+        next: 'icon-next',
+        back: 'icon-back'
+    }
 });
