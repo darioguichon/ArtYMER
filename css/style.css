@@ -32,6 +32,7 @@ body {
 #header-image {
     
     background-image: linear-gradient(to top, #9b6b6ba4 0%, #ffffffa4 100%), url(../img/matera.jpeg);
+    background-image: linear-gradient(to top, #9b6b6ba4 0%, #ffffffa4 100%), url(../img/ban.jpeg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
